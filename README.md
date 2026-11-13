@@ -15,13 +15,13 @@ Phases covered	Phase 1: Reconnaissance & Footprinting
 
 
 
-1. Liability Disclaimer
+# Liability Disclaimer
 I have performed these activities only on the systems & devices where I had secured written permission or the devices/systems that I own myself. All these materials are for education and research purpose only. Do not use anything from here to break the law. The instructor, the authors and Networkwalks are not responsible for what you do with this knowledge. Every action you take is your own responsibility. Misuse can lead to criminal charges, heavy fines, loss of your job and a permanent record. In most countries unauthorised access is a crime even when nothing is damaged.
  
-2. Introduction
+# Introduction
 This report covers reconnaissance and footprinting of the networkwalks.com domain using Google Dorking via the Google Hacking Database (GHDB) for W2-PM2. One module covers the footprinting and search phase using GHDB, and the other covers the network scanning phase. Together, they demonstrate how an attacker moves from passive open-source intelligence (OSINT) gathering to active mapping of live hosts on a network. It is the Week 2 part of my ongoing internship program at Networkwalks. 
 
-3. Tools Used
+# Tools Used
 The table below lists each tool used in this report and its purpose.
 Tool	Purpose
 DHGB	Repository of advanced Google search queries used to find exposed files, directories, and sensitive data.
@@ -29,7 +29,7 @@ Exploit-db	Platform hosting the Google Hacking Database (GHDB) and documented vu
 intitle:" " -com	Search operator used to locate open directory listings or specific page titles while excluding standard .com domains.
 intitle:"Index of" "DCIM/camera"	Google Dork query used to identify exposed open web directories containing unauthenticated camera and image files.
 
-4. Activities Performed
+# Activities Performed
 4.1 Footprinting & Reconnaissance
 
 I performed passive reconnaissance and information gathering using the Google Hacking Database (GHDB) hosted on Exploit-DB. By utilizing advanced Google search operators ("Google Dorks"), I searched for publicly indexed directories, exposed media files, and misconfigured web servers without directly probing or interacting with the target systems.
@@ -43,7 +43,7 @@ Finally, I executed the GHDB query intitle:"Index of" "DCIM/camera". The results
 
 
  
-5. Risk Analysis / Impact
+# Risk Analysis / Impact
 Based on the information collected during the footprinting and network scanning activities, I identified the following potential risks.
 	Risk / Finding	Evidence / Observation	Potential Impact	Risk Level
 1	Exposed public webcams	GHDB dorks (e.g., intitle:"webcamXP") identified unauthenticated live webcams	Unauthorized surveillance and viewing of private physical environments	● Medium
@@ -58,7 +58,7 @@ The risks above are observations from the footprinting and scanning exercises, n
 The practical exercises primarily involved information gathering and host discovery. No exploitation or vulnerability validation was performed as part of these two modules.
 Therefore, the presence of information such as a software version, IP address or DNS record does not by itself mean that the system is vulnerable. Further authorized security testing would be required to confirm any actual vulnerability.
 
-6. Recommendations
+# Recommendations
 Based on the observations from these Google Dorking and OSINT activities, I recommend the following security improvements:
 
 1.	Monitor and restrict indexed search engine content
@@ -82,7 +82,7 @@ Reconnaissance, dorking, and vulnerability assessments should only be performed 
 
 
 
-7. Conclusion
+# Conclusion
 During Week 2 of my Cybersecurity & Ethical Hacking internship, I completed practical activities covering passive reconnaissance, footprinting, and Google Dorking using the Google Hacking Database (GHDB).
 In the footprinting activity, I used advanced Google search operators and GHDB queries to discover exposed webcams, open directories, sensitive media files, and insecure administrative portals without directly interacting with the target systems. I learned how search engine indexing and improper access controls can inadvertently expose private information and system vulnerabilities to the public.
 In the analysis component, I documented potential attack surfaces and evaluated risks associated with hardcoded credentials and configuration disclosures. Overall, this module demonstrated how attackers leverage passive OSINT and search queries for intelligence gathering before conducting active attacks.
