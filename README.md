@@ -45,7 +45,7 @@ Finally, I executed the GHDB query intitle:"Index of" "DCIM/camera". The results
  
 5. Risk Analysis / Impact
 Based on the information collected during the footprinting and network scanning activities, I identified the following potential risks.
-#	Risk / Finding	Evidence / Observation	Potential Impact	Risk Level
+	Risk / Finding	Evidence / Observation	Potential Impact	Risk Level
 1	Exposed public webcams	GHDB dorks (e.g., intitle:"webcamXP") identified unauthenticated live webcams	Unauthorized surveillance and viewing of private physical environments	● Medium
 2	Open directories with sensitive media	Dorks like intitle:"Index of" "DCIM/camera" revealed exposed camera folders	Unintended public disclosure of personal photos, videos, and local files	● Medium
 3	Exposed device management portals	Search queries uncovered open administrative interfaces and web server ports (e.g., port 8080)	Attackers can interact with management interfaces and attempt further exploitation	● Medium
