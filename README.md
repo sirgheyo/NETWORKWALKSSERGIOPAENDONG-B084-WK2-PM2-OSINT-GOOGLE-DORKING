@@ -80,6 +80,8 @@ Train personnel on the risks of exposing internal infrastructure details, file s
 9.	Perform security testing with authorization
 Reconnaissance, dorking, and vulnerability assessments should only be performed against systems and networks where explicit authorization has been granted. 
 
+
+
 7. Conclusion
 During Week 2 of my Cybersecurity & Ethical Hacking internship, I completed practical activities covering passive reconnaissance, footprinting, and Google Dorking using the Google Hacking Database (GHDB).
 In the footprinting activity, I used advanced Google search operators and GHDB queries to discover exposed webcams, open directories, sensitive media files, and insecure administrative portals without directly interacting with the target systems. I learned how search engine indexing and improper access controls can inadvertently expose private information and system vulnerabilities to the public.
